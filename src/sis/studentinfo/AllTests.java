@@ -1,10 +1,8 @@
-package pkg.tests;
+package sis.studentinfo;
 
 import junit.framework.TestSuite;
-import junit.framework.Test;
-import pkg.courseSession.CourseSessionTest;
-import pkg.student.StudentTest;
-
+import pkg.chess.BoardTest;
+import pkg.chess.PawnTest;
 
 /**
  * Created with IntelliJ IDEA.
@@ -18,6 +16,9 @@ public class AllTests  {
         TestSuite suite = new TestSuite();
         suite.addTestSuite(CourseSessionTest.class);
         suite.addTestSuite(StudentTest.class);
+        suite.addTestSuite(PawnTest.class);
+        suite.addTestSuite(BoardTest.class);
+        suite.addTestSuite(DateUtilTest.class);
        return suite;
     }
 }
